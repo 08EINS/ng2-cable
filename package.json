@@ -12,8 +12,8 @@
     "build": "npm run clean && npm run transpile && npm run package && npm run minify && npm run copy"
   },
   "devDependencies": {
-    "@angular/compiler": "6.1.10",
-    "@angular/compiler-cli": "6.1.10",
+    "@angular/compiler": "^6.1.10",
+    "@angular/compiler-cli": "^6.1.10",
     "cpx": "^1.5.0",
     "renamer": "^0.6.1",
     "rimraf": "^2.5.4",
@@ -22,10 +22,10 @@
     "uglify-js": "^2.7.5"
   },
   "dependencies": {
-    "@angular/core": "6.1.10",
+    "@angular/core": "^6.1.10",
     "@types/actioncable": "0.0.2",
     "actioncable": "5.1.2",
-    "rxjs": "6.6.7"
+    "rxjs": "^6.6.7"
   },
   "repository": {
     "type": "git",

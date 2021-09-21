@@ -38,7 +38,7 @@
     "actioncable": "5.1.2"
   },
   "peerDependencies": {
-    "@angular/core": ">= 6 < 14",
+    "@angular/core": ">= 6 < 13",
     "rxjs": ">= 6 < 7"
   },
   "homepage": "https://github.com/08EINS/ng2-cable#readme"
