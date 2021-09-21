@@ -22,9 +22,7 @@ export class Broadcaster {
       .pipe(
         filter(
           (event) => event.key === key
-        )
-      )
-      .pipe(
+        ),
         map(
           (event) => <T>event.data
         )
