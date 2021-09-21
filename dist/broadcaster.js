@@ -1,7 +1,6 @@
-import { Subject } from 'rxjs/Subject';
-import 'rxjs/add/operator/filter';
-import 'rxjs/add/operator/map';
-export var Broadcaster = (function () {
+import { Subject } from 'rxjs';
+import { filter, map } from 'rxjs/operators';
+var Broadcaster = /** @class */ (function () {
     function Broadcaster() {
         this._eventBus = new Subject();
     }
@@ -10,9 +9,9 @@ export var Broadcaster = (function () {
     };
     Broadcaster.prototype.on = function (key) {
         return this._eventBus.asObservable()
-            .filter(function (event) { return event.key === key; })
-            .map(function (event) { return event.data; });
+            .pipe(filter(function (event) { return event.key === key; }), map(function (event) { return event.data; }));
     };
     return Broadcaster;
 }());
+export { Broadcaster };
 //# sourceMappingURL=broadcaster.js.map

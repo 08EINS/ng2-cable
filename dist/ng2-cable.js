@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import * as ActionCable from 'actioncable';
 import { Broadcaster } from './broadcaster';
-export var Ng2Cable = (function () {
+var Ng2Cable = /** @class */ (function () {
     function Ng2Cable(broadcaster) {
         this.broadcaster = broadcaster;
         this.actionCable = ActionCable;
@@ -28,8 +28,9 @@ export var Ng2Cable = (function () {
     ];
     /** @nocollapse */
     Ng2Cable.ctorParameters = function () { return [
-        { type: Broadcaster, },
+        { type: Broadcaster }
     ]; };
     return Ng2Cable;
 }());
+export { Ng2Cable };
 //# sourceMappingURL=ng2-cable.js.map

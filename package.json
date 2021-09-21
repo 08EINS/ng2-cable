@@ -1,7 +1,7 @@
 {
   "name": "ng2-cable",
   "version": "2.0.7",
-  "description": "Easily integrate Rails' ActionCable into your Angular2/4/ionic2/3 application.",
+  "description": "Easily integrate Rails' ActionCable into your Angular6+ application.",
   "main": "index.js",
   "scripts": {
     "clean": "rimraf .tmp && rimraf dist",
@@ -12,26 +12,24 @@
     "build": "npm run clean && npm run transpile && npm run package && npm run minify && npm run copy"
   },
   "devDependencies": {
-    "@angular/compiler": "^2.4.4",
-    "@angular/compiler-cli": "^2.4.4",
+    "@angular/compiler": "6.1.10",
+    "@angular/compiler-cli": "6.1.10",
     "cpx": "^1.5.0",
     "renamer": "^0.6.1",
     "rimraf": "^2.5.4",
     "rollup": "^0.41.4",
-    "typescript": "~2.0.0",
+    "typescript": "^2.9",
     "uglify-js": "^2.7.5"
   },
   "dependencies": {
-    "@angular/common": "^2.4.4",
-    "@angular/core": "^2.4.4",
+    "@angular/core": "6.1.10",
     "@types/actioncable": "0.0.2",
     "actioncable": "5.1.2",
-    "rxjs": "^5.0.3",
-    "zone.js": "^0.7.6"
+    "rxjs": "6.6.7"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/viktor-shmigol/ng2-cable.git"
+    "url": "git+ssh://git@github.com/08EINS/ng2-cable.git"
   },
   "keywords": [
     "cable",
@@ -52,10 +50,10 @@
     "Rails5",
     "Action Cable"
   ],
-  "author": "Victor Shmigol",
+  "author": "08EINS",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/viktor-shmigol/ng2-cable/issues"
+    "url": "https://github.com/08EINS/ng2-cable/issues"
   },
-  "homepage": "https://github.com/viktor-shmigol/ng2-cable#readme"
+  "homepage": "https://github.com/08EINS/ng2-cable#readme"
 }
