@@ -1,20 +1,27 @@
+/**
+ * @type {import('rollup').RollupOptions}
+ */
 export default {
-  entry: 'dist/index.js',
-  dest: 'dist/bundles/ng2-cable.umd.js',
-  sourceMap: false,
-  format: 'umd',
-  moduleName: 'ng2-cable',
-  globals: {
-    '@angular/core': 'ng.core',
-    '@angular/common': 'ng.common',
-    'rxjs': 'Rx',
-    'rxjs/operators': 'Rx.operators',
-    'actioncable': 'ActionCable'
+  input: 'dist/index.js',
+  output: {
+    file: 'dist/bundles/ng2-cable.umd.js',
+    name: 'ng2-cable',
+    format: 'umd',
+    globals: {
+      '@angular/core': 'ng.core',
+      '@angular/common': 'ng.common',
+      'rxjs': 'Rx',
+      'rxjs/operators': 'Rx.operators',
+      'actioncable': 'ActionCable',
+      'tslib': 'tslib',
+    },
+    sourcemap: false,
   },
   external: [
     '@angular/core',
     'rxjs/operators',
     'rxjs',
-    'actioncable'
+    'actioncable',
+    'tslib',
   ]
-}
+};

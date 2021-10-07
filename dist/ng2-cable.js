@@ -1,3 +1,4 @@
+import * as tslib_1 from "tslib";
 import { Injectable } from '@angular/core';
 import * as ActionCable from 'actioncable';
 import { Broadcaster } from './broadcaster';
@@ -23,13 +24,10 @@ var Ng2Cable = /** @class */ (function () {
     Ng2Cable.prototype.unsubscribe = function () {
         this.cable.subscriptions.remove(this.subscription);
     };
-    Ng2Cable.decorators = [
-        { type: Injectable },
-    ];
-    /** @nocollapse */
-    Ng2Cable.ctorParameters = function () { return [
-        { type: Broadcaster }
-    ]; };
+    Ng2Cable = tslib_1.__decorate([
+        Injectable(),
+        tslib_1.__metadata("design:paramtypes", [Broadcaster])
+    ], Ng2Cable);
     return Ng2Cable;
 }());
 export { Ng2Cable };
