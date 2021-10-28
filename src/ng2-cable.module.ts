@@ -9,7 +9,7 @@ import { Broadcaster } from './broadcaster';
   ]
 })
 export class Ng2CableModule {
-  static forRoot(): ModuleWithProviders {
+  static forRoot(): ModuleWithProviders<Ng2CableModule> {
     return {
       ngModule: Ng2CableModule,
       providers: [

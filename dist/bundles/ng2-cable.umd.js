@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('rxjs'), require('rxjs/operators'), require('tslib'), require('@angular/core'), require('actioncable')) :
-    typeof define === 'function' && define.amd ? define(['exports', 'rxjs', 'rxjs/operators', 'tslib', '@angular/core', 'actioncable'], factory) :
-    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global["ng2-cable"] = {}, global.Rx, global.Rx.operators, global.tslib, global.ng.core, global.ActionCable));
-})(this, (function (exports, rxjs, operators, tslib_1, core, ActionCable) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('rxjs'), require('rxjs/operators'), require('@angular/core'), require('actioncable')) :
+    typeof define === 'function' && define.amd ? define(['exports', 'rxjs', 'rxjs/operators', '@angular/core', 'actioncable'], factory) :
+    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global["ng2-cable"] = {}, global.Rx, global.Rx.operators, global.ng.core, global.ActionCable));
+})(this, (function (exports, rxjs, operators, i0, ActionCable) { 'use strict';
 
     function _interopNamespace(e) {
         if (e && e.__esModule) return e;
@@ -22,7 +22,7 @@
         return Object.freeze(n);
     }
 
-    var tslib_1__namespace = /*#__PURE__*/_interopNamespace(tslib_1);
+    var i0__namespace = /*#__PURE__*/_interopNamespace(i0);
     var ActionCable__namespace = /*#__PURE__*/_interopNamespace(ActionCable);
 
     var Broadcaster = /** @class */ (function () {
@@ -61,37 +61,43 @@
         Ng2Cable.prototype.unsubscribe = function () {
             this.cable.subscriptions.remove(this.subscription);
         };
-        Ng2Cable = tslib_1__namespace.__decorate([
-            core.Injectable(),
-            tslib_1__namespace.__metadata("design:paramtypes", [Broadcaster])
-        ], Ng2Cable);
+        Ng2Cable.ɵfac = function Ng2Cable_Factory(t) { return new (t || Ng2Cable)(i0__namespace.ɵɵinject(Broadcaster)); };
+        Ng2Cable.ɵprov = /*@__PURE__*/ i0__namespace.ɵɵdefineInjectable({ token: Ng2Cable, factory: Ng2Cable.ɵfac });
         return Ng2Cable;
     }());
+    (function () { (typeof ngDevMode === "undefined" || ngDevMode) && i0__namespace.ɵsetClassMetadata(Ng2Cable, [{
+            type: i0.Injectable
+        }], function () { return [{ type: Broadcaster }]; }, null); })();
 
     var Ng2CableModule = /** @class */ (function () {
         function Ng2CableModule() {
         }
-        Ng2CableModule_1 = Ng2CableModule;
         Ng2CableModule.forRoot = function () {
             return {
-                ngModule: Ng2CableModule_1,
+                ngModule: Ng2CableModule,
                 providers: [
                     Ng2Cable,
                     Broadcaster
                 ]
             };
         };
-        var Ng2CableModule_1;
-        Ng2CableModule = Ng2CableModule_1 = tslib_1__namespace.__decorate([
-            core.NgModule({
-                providers: [
-                    Ng2Cable,
-                    Broadcaster
-                ]
-            })
-        ], Ng2CableModule);
+        Ng2CableModule.ɵfac = function Ng2CableModule_Factory(t) { return new (t || Ng2CableModule)(); };
+        Ng2CableModule.ɵmod = /*@__PURE__*/ i0__namespace.ɵɵdefineNgModule({ type: Ng2CableModule });
+        Ng2CableModule.ɵinj = /*@__PURE__*/ i0__namespace.ɵɵdefineInjector({ providers: [
+                Ng2Cable,
+                Broadcaster
+            ] });
         return Ng2CableModule;
     }());
+    (function () { (typeof ngDevMode === "undefined" || ngDevMode) && i0__namespace.ɵsetClassMetadata(Ng2CableModule, [{
+            type: i0.NgModule,
+            args: [{
+                    providers: [
+                        Ng2Cable,
+                        Broadcaster
+                    ]
+                }]
+        }], null, null); })();
 
     exports.Broadcaster = Broadcaster;
     exports.Ng2Cable = Ng2Cable;

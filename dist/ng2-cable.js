@@ -1,7 +1,7 @@
-import * as tslib_1 from "tslib";
 import { Injectable } from '@angular/core';
 import * as ActionCable from 'actioncable';
-import { Broadcaster } from './broadcaster';
+import * as i0 from "@angular/core";
+import * as i1 from "./broadcaster";
 var Ng2Cable = /** @class */ (function () {
     function Ng2Cable(broadcaster) {
         this.broadcaster = broadcaster;
@@ -24,11 +24,12 @@ var Ng2Cable = /** @class */ (function () {
     Ng2Cable.prototype.unsubscribe = function () {
         this.cable.subscriptions.remove(this.subscription);
     };
-    Ng2Cable = tslib_1.__decorate([
-        Injectable(),
-        tslib_1.__metadata("design:paramtypes", [Broadcaster])
-    ], Ng2Cable);
+    Ng2Cable.ɵfac = function Ng2Cable_Factory(t) { return new (t || Ng2Cable)(i0.ɵɵinject(i1.Broadcaster)); };
+    Ng2Cable.ɵprov = /*@__PURE__*/ i0.ɵɵdefineInjectable({ token: Ng2Cable, factory: Ng2Cable.ɵfac });
     return Ng2Cable;
 }());
 export { Ng2Cable };
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(Ng2Cable, [{
+        type: Injectable
+    }], function () { return [{ type: i1.Broadcaster }]; }, null); })();
 //# sourceMappingURL=ng2-cable.js.map
