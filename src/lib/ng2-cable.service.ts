@@ -2,7 +2,9 @@ import { Injectable } from '@angular/core'
 import * as ActionCable from 'actioncable';
 import { Broadcaster } from './broadcaster';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class Ng2Cable {
   public cable: any;
   public subscription: any;

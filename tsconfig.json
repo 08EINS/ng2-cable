@@ -1,42 +1,40 @@
 {
-	"compilerOptions": {
-		"baseUrl": "",
-		"declaration": true,
-		"stripInternal": true,
-		"experimentalDecorators": true,
-		"strictNullChecks": true,
-		"noImplicitAny": true,
-		"module": "es2015",
-		"moduleResolution": "node",
-		"paths": {
-			"@angular/core": [
-				"node_modules/@angular/core"
-			],
-			"@angular/common": [
-				"node_modules/@angular/common"
-			],
-			"rxjs/*": [
-				"node_modules/rxjs/*"
-			]
-		},
-		"rootDir": "src",
-		"outDir": "dist",
-		"sourceMap": true,
-		"inlineSources": true,
-		"importHelpers": true,
-		"target": "es5",
-		"skipLibCheck": true,
-		"lib": [
-			"es2015",
-			"dom"
-		]
-	},
-	"files": [
-		"./src/index.ts"
-	],
-	"angularCompilerOptions": {
-		"strictMetadataEmit": true,
-		"fullTemplateTypeCheck": true,
-		"genDir": ".tmp"
-	}
+  "compilerOptions": {
+    "baseUrl": "",
+    "declaration": true,
+    "stripInternal": true,
+    "experimentalDecorators": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "module": "es2015",
+    "moduleResolution": "node",
+    "paths": {
+      "@angular/core": [
+        "node_modules/@angular/core"
+      ],
+      "@angular/common": [
+        "node_modules/@angular/common"
+      ],
+      "rxjs/*": [
+        "node_modules/rxjs/*"
+      ]
+    },
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "sourceMap": true,
+    "inlineSources": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "skipLibCheck": true,
+    "lib": [
+      "es2015",
+      "dom"
+    ]
+  },
+  "angularCompilerOptions": {
+    "strictMetadataEmit": true,
+    "fullTemplateTypeCheck": true,
+    "compilationMode": "partial",
+    "annotationsAs": "decorators"
+  }
 }

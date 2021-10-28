@@ -1,0 +1,1 @@
+{"version":3,"file":"ng2-cable.module.d.ts","sourceRoot":"ng://ng2-cable/","sources":["lib/ng2-cable.module.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,mBAAmB,EAAY,MAAM,eAAe,CAAC;;AAI9D,qBAMa,cAAc;IACzB,MAAM,CAAC,OAAO,IAAI,mBAAmB,CAAC,cAAc,CAAC;0CAD1C,cAAc;kCAAd,cAAc;CAU1B"}

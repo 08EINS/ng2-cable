@@ -3,8 +3,8 @@
   "version": "2.0.8-1",
   "description": "Easily integrate Rails' ActionCable into your Angular6+ application.",
   "main": "bundles/ng2-cable.umd.min.js",
-  "module": "index.js",
-  "typings": "index.d.ts",
+  "module": "public-api.js",
+  "typings": "public-api.d.ts",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/08EINS/ng2-cable.git"

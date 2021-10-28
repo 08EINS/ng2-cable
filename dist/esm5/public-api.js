@@ -1,0 +1,7 @@
+/*
+ * Public API Surface of ng2-cable
+ */
+export * from './lib/ng2-cable.service';
+export * from './lib/broadcaster';
+export * from './lib/ng2-cable.module';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiJuZzovL25nMi1jYWJsZS8iLCJzb3VyY2VzIjpbInB1YmxpYy1hcGkudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0dBRUc7QUFFSCxjQUFjLHlCQUF5QixDQUFDO0FBQ3hDLGNBQWMsbUJBQW1CLENBQUM7QUFDbEMsY0FBYyx3QkFBd0IsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbIi8qXG4gKiBQdWJsaWMgQVBJIFN1cmZhY2Ugb2YgbmcyLWNhYmxlXG4gKi9cblxuZXhwb3J0ICogZnJvbSAnLi9saWIvbmcyLWNhYmxlLnNlcnZpY2UnO1xuZXhwb3J0ICogZnJvbSAnLi9saWIvYnJvYWRjYXN0ZXInO1xuZXhwb3J0ICogZnJvbSAnLi9saWIvbmcyLWNhYmxlLm1vZHVsZSc7XG4iXX0=
