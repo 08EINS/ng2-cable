@@ -1,7 +1,7 @@
 import { __decorate } from 'tslib';
-import { ɵɵdefineInjectable, ɵɵinject, Injectable, NgModule } from '@angular/core';
+import * as i0 from '@angular/core';
+import { Injectable, NgModule } from '@angular/core';
 import * as ActionCable from 'actioncable';
-import { createConsumer } from 'actioncable';
 import { Subject } from 'rxjs';
 import { filter, map } from 'rxjs/operators';
 
@@ -33,16 +33,13 @@ let Ng2Cable = class Ng2Cable {
         });
     }
     setCable(url) {
-        this.cable = createConsumer(url);
+        this.cable = ActionCable.createConsumer(url);
     }
     unsubscribe() {
         this.cable.subscriptions.remove(this.subscription);
     }
 };
-Ng2Cable.ctorParameters = () => [
-    { type: Broadcaster }
-];
-Ng2Cable.ɵprov = ɵɵdefineInjectable({ factory: function Ng2Cable_Factory() { return new Ng2Cable(ɵɵinject(Broadcaster)); }, token: Ng2Cable, providedIn: "root" });
+Ng2Cable.ɵprov = i0.ɵɵdefineInjectable({ factory: function Ng2Cable_Factory() { return new Ng2Cable(i0.ɵɵinject(Broadcaster)); }, token: Ng2Cable, providedIn: "root" });
 Ng2Cable = __decorate([
     Injectable({
         providedIn: 'root'

@@ -8,12 +8,9 @@
   ],
   "scripts": {
     "clean": "rimraf .tmp && rimraf dist",
-    "transpile": "ng build --prod",
+    "transpile": "ng build --configuration production",
     "build": "npm run clean && npm run transpile",
-    "preinstall": "npx npm-force-resolutions"
-  },
-  "resolutions": {
-    "coa": "2.0.2"
+    "ng": "ng"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~12.2.13",

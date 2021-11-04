@@ -7,7 +7,6 @@
     "dist"
   ],
   "peerDependencies": {
-    "@angular/core": "^9",
     "actioncable": "5.2.6",
     "rxjs": "^6.6.7"
   },
@@ -40,16 +39,14 @@
     "url": "https://github.com/08EINS/ng2-cable/issues"
   },
   "homepage": "https://github.com/08EINS/ng2-cable#readme",
-  "module": "fesm5/ng2-cable.js",
+  "module": "fesm2015/ng2-cable.js",
   "es2015": "fesm2015/ng2-cable.js",
-  "esm5": "esm5/ng2-cable.js",
   "esm2015": "esm2015/ng2-cable.js",
-  "fesm5": "fesm5/ng2-cable.js",
   "fesm2015": "fesm2015/ng2-cable.js",
   "typings": "ng2-cable.d.ts",
   "metadata": "ng2-cable.metadata.json",
   "sideEffects": false,
   "dependencies": {
-    "tslib": "^1.10.0"
+    "tslib": "^2.2.0"
   }
 }
