@@ -36,11 +36,11 @@
   "dependencies": {
     "@types/actioncable": "5.2.7",
     "actioncable": "5.2.6",
-    "tslib": "1.14.1"
+    "tslib": "2.3.1"
   },
   "peerDependencies": {
-    "@angular/core": ">= 8 < 13",
-    "rxjs": ">= 6 < 7"
+    "@angular/core": "^12",
+    "rxjs": "^6"
   },
   "homepage": "https://github.com/08EINS/ng2-cable#readme"
 }
