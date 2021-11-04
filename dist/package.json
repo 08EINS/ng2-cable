@@ -1,6 +1,6 @@
 {
   "name": "ng2-cable",
-  "version": "2.0.8-1",
+  "version": "2.0.8-2",
   "description": "Easily integrate Rails' ActionCable into your Angular6+ application.",
   "main": "bundles/ng2-cable.umd.js",
   "files": [
@@ -44,7 +44,6 @@
   "esm2015": "esm2015/ng2-cable.js",
   "fesm2015": "fesm2015/ng2-cable.js",
   "typings": "ng2-cable.d.ts",
-  "metadata": "ng2-cable.metadata.json",
   "sideEffects": false,
   "dependencies": {
     "tslib": "^2.2.0"
